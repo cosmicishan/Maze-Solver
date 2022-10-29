@@ -3,12 +3,6 @@ Finding the shortest path of the Maze
 
 In this repository I have implemented an algorithm to solve the Maze.
 
-**The Maze is in text filed:**
-
-A - Starting Point.
-B - The goal the algorithm have to reach.
-# - Walls which the ALgorithm can't pas through. 
-
 **Method of Searching**
 
 In a search process, data is often stored in a node which is a tuple which holds the position/location of the Maze which is in row and column form.
@@ -55,5 +49,11 @@ The depth-first algorithm will follow multiple direction at same time. The data 
 The depth-first algorithm will follow multiple direction at same time. The data structure it uses for the frontier is *queue* To use this algorithm for the solution, you need to pass 'queue' when you define the class of Agent. After new observations are being added to the frontier, the first node will be removed and last one will be added and first node will be set to explore that direction. This results in algorithm that goes as deep as possible in the first direction that gets in its way while leaving all other directions for later. Only after it has exhausted all the locations it will go back to next direction and search in the next location.
 
 **Maze_files**
+
+*The Maze is in text filed:*
+
+'A' - Starting Point.
+'B' - The goal the algorithm have to reach.
+'#' - Walls which the ALgorithm can't pas through. 
 
 There are 3 Maze files and I have run the code to solve all 3 of those Maze file. The argument of the Agent class takes the location of Maze file and it will return the solution inside the Solution folder with the name of maze and the data structure it uses for the Frontier. 
